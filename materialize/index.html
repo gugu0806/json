@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <script>
+	 var list = [
+	  {"iL":"http://twcoupon.com/images/logo/p_50lan.png",
+		"tL":"50嵐",
+		"pL":"抹茶拿鐵",
+		"hL":"http://50lan.com/web/news.asp"},
+	  {"iL":"http://twcoupon.com/images/logo/p_teaplus.png",
+		"tL":"水巷茶弄",
+		"pL":"蜂蜜蘆薈",
+		"hL":"http://www.teaplus.com.tw/product.php"},
+	  {"iL":"http://lh4.ggpht.com/VZwC2yYjqPBo9ep9bxYtUyAZVmD4cDcNzRHYVoTniW13Ou0kD5UYyiDN6M2vZRp9z8XEOuWxWrlcpFLkx_o_kA0=s195-c",
+		"tL":"清玉",
+		"pL":"翡翠檸檬",
+		"hL":"http://www.kingyo.com.tw/myshop/kingtea168/index.aspx"},
+	  {"iL":"http://twcoupon.com/images/logo/p_chingshin.png",
+		  "tL":"清心",
+		  "pL":"高山青茶",
+		  "hL":"http://www.chingshin.tw/"},
+	  ];
+	  var str='';
+	  function f(){
+		for(i = 0;i<list.length;i++){
+			str += 	'<li class="collection-item avatar"><img src="'+list[i].iL+ '"alt="" class="circle">\
+				<span class="title">'+list[i].tL+'</span>'+'<p>'+list[i].pL+'</p>\
+				  <a href="'+list[i].hL+'" class="secondary-content"><i class="material-icons">grade</i></a></li>';
+		}
+	  document.getElementById("aaa").innerHTML = str;
+	  }
+	  
+	  
+	  </script>
+	  
+    </head>
+
+    <body onload="f()">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <ul class="collection" id = "aaa">
+	</ul>
+	</body>
+  </html>
+        
